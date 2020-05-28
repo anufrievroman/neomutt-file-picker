@@ -1,5 +1,5 @@
 # NeomuttFilePicker
-Attach files to your emails in [Neomutt](https://github.com/neomutt/) using [Ranger](https://github.com/ranger/ranger) or [Vifm](https://github.com/vifm) as your file manager.
+Attach files to your emails in [NeoMutt](https://github.com/neomutt/) using [Ranger](https://github.com/ranger/ranger) or [Vifm](https://github.com/vifm) as your file manager.
 
 This script is based on the [this topic](https://www.reddit.com/r/commandline/comments/cbxvdf/combine_neomutt_with_ranger/) and improved to allow attaching mulptiple files with spaces in the name and path.
 
@@ -16,5 +16,5 @@ macro compose A "<shell-escape>bash $HOME/.config/mutt/filepick<enter><enter-com
 In the "filepicker" file you can choose which file manager to use. Vifm by default, but you can uncomment Ranger and comment Vifm if you like.
 
 ## Issues
-- You should start mutt from your home directory or you won't be able to attach the file
-- You might need to make the script executable if you have error about permissions
+- You should start NeoMutt from your home directory, otherwise you won't be able to attach files.
+- You might need to make the script executable if you have error about permissions.
