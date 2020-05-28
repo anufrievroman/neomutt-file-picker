@@ -14,3 +14,7 @@ macro compose A "<shell-escape>bash $HOME/.config/mutt/filepick<enter><enter-com
 
 ## Settings
 In the "filepicker" file you can choose which file manager to use. Vifm by default, but you can uncomment Ranger and comment Vifm if you like.
+
+## Issues
+- You should start mutt from your home directory or you won't be able to attach the file
+- You might need to make the script executable if you have error about permissions
