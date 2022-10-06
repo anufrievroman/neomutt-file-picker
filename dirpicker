@@ -1,10 +1,10 @@
 #!/bin/sh
 
-tmpfile=.mutt/tmpfile
+tmpfile=.config/mutt/tmpfile
     
 if \[ -z "$1" \]; then
     ranger --choosedir $tmpfile &&    # Use Ranger
-    #vifm --choose-files $tmpfile &&       # Use Vifm
+    # vifm --choose-dir $tmpfile &&    # Use Vifm
     sed -i 's/ /^V /g' $tmpfile &&
     echo "$(awk 'BEGIN {printf "%s", "push "} {printf "%s", "<save-entry>\""$0"\"<enter>"}'  $tmpfile)" > $tmpfile
 elif \[ $1 == "clean" \]; then
