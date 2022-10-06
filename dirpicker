@@ -1,6 +1,6 @@
 #!/bin/sh
 
-tmpfile=.config/mutt/tmpfile
+tmpfile=$HOME/.config/mutt/tmpfile
     
 if \[ -z "$1" \]; then
     ranger --choosedir $tmpfile &&    # Use Ranger
