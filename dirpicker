@@ -5,6 +5,7 @@ tmpfile=$HOME/.config/mutt/tmpfile
 if \[ -z "$1" \]; then
     ranger --choosedir $tmpfile &&    # Use Ranger
     # vifm --choose-dir $tmpfile &&    # Use Vifm
+    # yazi "$@" --cwd-file="$tmpfile" && # Use Yazi
     sed -i 's/ /^V /g' $tmpfile &&
     echo "$(awk 'BEGIN {printf "%s", "push "} {printf "%s", "<save-entry>\""$0"\"<enter>"}'  $tmpfile)" > $tmpfile
 elif \[ $1 == "clean" \]; then
