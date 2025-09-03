@@ -21,7 +21,7 @@ macro compose A "<shell-escape>bash $HOME/.config/mutt/filepicker<enter><enter-c
 2. Add the following line to your `.muttrc` so that you can choose the folder where to store files with `S`
 
 ```
-macro attach S "<shell-escape>bash $HOME/.config/mutt/dirpicker<enter><enter-command>source $HOME/.config/mutt/tmpfile<enter>o" "Choose folder with ranger"
+macro attach S "<shell-escape>bash $HOME/.config/mutt/dirpicker<enter><enter-command>source $HOME/.config/mutt/tmpfile<enter>y<enter>" "Choose folder with ranger"
 ```
 3. Now, on the attachment screen (by default, reached with `v`), type `S` instead of standard `s` to call the script. The file manager should appear. Choose the folder with ranger, quit with `q`. Mutt may then ask for the filename in the folder. 
 
